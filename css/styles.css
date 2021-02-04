@@ -765,7 +765,8 @@ margin-bottom: 20px;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-.portfolio-thumb:hover .portfolio-thumb-description {
+.portfolio-list-link:hover .portfolio-thumb-description,
+.portfolio-list-link:focus .portfolio-thumb-description {
    transform: translatey(0%); 
 }
 
