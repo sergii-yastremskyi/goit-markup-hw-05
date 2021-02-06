@@ -226,21 +226,16 @@ transition-property: color;
 }
 .hero{
     display: block;
+    padding-top: 200px;
+    padding-bottom: 200px;
     /* justify-content: center;
     align-items: center; */
-   
-   
-}
-.overlay {
-    display: block;
+    
     max-width: 1600px;
     height: 600px;
     margin: 0 auto;
   
     text-align: center;
-    padding-top: 200px;
-    /* padding-bottom: 200px; */
-    
     
     background-color: var(--hero-bg-color);
     
@@ -251,7 +246,12 @@ transition-property: color;
     background-repeat: no-repeat;
     background-position: cneter;
     background-size: cover;
+   
+   
 }
+/* .overlay {
+    
+} */
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -387,24 +387,27 @@ position: relative;
 }
 
 .waht-we-do-lower {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
 width: 100%;
 height: 70px;
 position: absolute;
 
-    display: block;
+    
     bottom: 0;
     width: 100%;
     background-color: var(--hero-bg-color);
     opacity: 0.9;
-    padding: 27px;
+    
     z-index: 3;
 }
 
 
 .what-we-do-description {
     
-
-    font-weight: bold;
+font-weight: bold;
 font-size: 14px;
 line-height: 1,142;
 text-align: center;
@@ -671,7 +674,9 @@ margin-bottom: 20px;
 
 /* MODAl */
 
-
+.modal-animation{
+     
+}
 .backdrop {
     position: fixed;
     top: 0;
@@ -679,11 +684,14 @@ margin-bottom: 20px;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     transition-property: opacity;
+    transition-duration: 2250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
+    
     
 }
 .modal {
@@ -697,6 +705,10 @@ margin-bottom: 20px;
     border-radius: 4px;
     background-color: var(--bg-color);
     padding: 8px; 
+    opacity: 1;  
+      transition-property: opacity;
+    transition-duration: 2250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .modal-close {
  position: absolute;
